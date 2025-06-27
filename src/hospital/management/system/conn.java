@@ -10,10 +10,11 @@ public class conn {
 
     public conn(){
         try{
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital_management_system", "root","123456");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital_management_system", "root","JavaProject@1");
             statement = connection.createStatement();
         }catch (Exception e){
             e.printStackTrace();
         }
+        //System.out.println("Connected to DB: hospital_management_system");
     }
 }

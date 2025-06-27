@@ -86,7 +86,7 @@ public static void main(String[] args){
                 ResultSet resultSet = c.statement.executeQuery(q);
 
                 if(resultSet.next()){
-                    new test();
+                    new Reception();
                     setVisible(false);
                 }else{
                     JOptionPane.showMessageDialog(null,"Invalid");
